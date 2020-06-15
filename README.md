@@ -1,13 +1,32 @@
-# ExpressJS - Starter Code
+# TTP CRUD Project - Express Server
+
+## Quick Start
 
 To start up dev server with nodemon:
 
 ```shell
-// Mac/Linux
+# Run the appropriate command based on your system:
+# On Mac/Linux:
 npm run dev
-// Windows
+# On Windows:
 npm run dev_windows
 ```
+
+---
+
+Please make sure to create a `.env` file and save the `LOCAL_DATABASE_PASSWORD` variable if you are working locally.
+
+```shell
+LOCAL_DATABASE_PASSWORD=somePassword123
+```
+
+If you have no password, please pass an empty string in single-quotes like so:
+
+```shell
+LOCAL_DATABASE_PASSWORD=''
+```
+
+## Getting Started
 
 You can either:
 
@@ -48,13 +67,13 @@ npm i compression dotenv helmet pgtools sequelize
 I recommend installing `nodemon`
 
 ```shell
-npm i -g nodemon
+npm i --save-dev nodemon
 ```
 
 Add the following to the list of scripts in `package.json`:
 
-```json=
-"dev": "nodemon ./bin/www"
+```json
+"dev": "npx nodemon ./bin/www"
 ```
 
 Nodemon will automatically reload the server when file changes are detected.
